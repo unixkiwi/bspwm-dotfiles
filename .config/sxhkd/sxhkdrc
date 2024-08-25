@@ -1,0 +1,66 @@
+#
+# SXHKD CONFIG
+# by unixkiwi
+#
+
+# terminal
+super + Return
+	alacritty
+
+# rofi
+super + d
+	rofi -show drun -sidebar-mode -modi run,drun -hide-scrollbar true
+
+# browser
+super + b
+	firefox-esr
+
+# filemanager
+super + e
+	doublecmd
+
+# lock
+super + l
+	i3lock -c 000000
+
+# bspwm keys
+
+# restart polybar
+super + shift + b
+	killall polybar; polybar &
+
+# quit/restart bspwm
+super + shift + {q,r}
+	bspc {quit,wm -r}
+
+# close app
+super + q
+	bspc node -c
+
+# kill app
+super + shift + k
+	bspc norde -k
+
+# toggle window floating
+super + v
+	bspc node -t "~"{floating,tiled}
+
+# toggle window fullscreen
+super + f
+	bspc node -t ~fullscreen
+
+# focus/send window in the given direction
+super + {_,shift + }{Left,Down,Up,Right}
+	bspc node -{f,s} {west,south,north,east}
+
+# focus or send to the given desktop
+super + {_,shift + }{1-9,0}
+	bspc {desktop -f,node -d} '^{1-9,10}'
+
+# preselect the direction
+super + ctrl + {h,j,k,l}
+	bspc node -p {west,south,north,east}
+
+# move a floating window
+super + {Left,Down,Up,Right}
+	bspc node -v {-20 0,0 20,0 -20,20 0}

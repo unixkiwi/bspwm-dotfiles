@@ -1,0 +1,21 @@
+#!/bin/bash
+
+choice=$( echo -e "Poweroff\nReboot\nSuspend\nLock\nLogout" | rofi -dmenu -theme $HOME/.config/rofi/powermenu.rasi )
+
+case $choice in 
+  Poweroff)
+    shutdown now
+    ;;
+  Reboot)
+  reboot
+  ;;
+  Suspend)
+    systemctl suspend
+    ;;
+  Lock)
+    i3lock -c 000000
+    ;;
+  Logout)
+    bspc quit
+    ;;
+esac

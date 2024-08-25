@@ -1,0 +1,19 @@
+/**
+ *
+ * Author : unixkiwi
+ * Github : @unxikiwi
+ * 
+ * Rofi Theme File
+ **/
+
+window {
+    location:                    center;
+    anchor:                      center;
+    fullscreen:                  true;
+}
+
+
+textbox {
+    vertical-align:              0.5;
+    horizontal-align:            0.5;
+}

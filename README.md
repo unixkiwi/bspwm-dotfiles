@@ -1,0 +1,1 @@
+# bspwm dotfiles for debian 12
