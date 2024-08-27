@@ -1,0 +1,20 @@
+@theme "/usr/share/rofi/themes/Pop-Dark.rasi"
+
+* {
+    selected-normal-foreground: #ffffff;
+    selected-normal-background: #709575;
+    background-color: #2d353b;
+    border-radius: 15px;
+}
+
+prompt {
+    text: "Search: ";
+}
+
+element {
+    padding: 4px;
+}
+
+element.selected {
+    border-radius: 5px;
+}

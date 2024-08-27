@@ -32,7 +32,7 @@ super + shift + q
 super + shift + b
 	killall polybar; polybar top1; polybar top2 &
 
-# quit/restart bspwm
+# restart bspwm
 super + shift + r
 	bspc wm -r
 
