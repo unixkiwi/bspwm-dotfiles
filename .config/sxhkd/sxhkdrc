@@ -24,14 +24,17 @@ super + l
 	i3lock -c 000000
 
 # bspwm keys
+# power menu
+super + shift + q
+	sh $HOME/.scripts/power_menu
 
 # restart polybar
 super + shift + b
-	killall polybar; polybar &
+	killall polybar; polybar top1; polybar top2 &
 
 # quit/restart bspwm
-super + shift + {q,r}
-	bspc {quit,wm -r}
+super + shift + r
+	bspc wm -r
 
 # close app
 super + q

@@ -1,14 +1,14 @@
 #!/bin/bash
 
-choice=$( echo -e "Poweroff\nReboot\nSuspend\nLock\nLogout" | rofi -dmenu -theme $HOME/.config/rofi/powermenu.rasi )
+choice=$( echo "Poweroff\nReboot\nSuspend\nLock\nLogout" | rofi -dmenu -theme $HOME/.config/rofi/powermenu.rasi )
 
 case $choice in 
   Poweroff)
-    shutdown now
+    systemctl poweroff
     ;;
   Reboot)
-  reboot
-  ;;
+    systemctl reboot
+    ;;
   Suspend)
     systemctl suspend
     ;;

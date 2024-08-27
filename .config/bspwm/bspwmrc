@@ -6,8 +6,11 @@
 #
 
 # AUTOSTART
-# keyboard layout
 setxkbmap de
+
+# Bluetooth
+killall blueman-applet
+blueman-applet &
 
 # sxhkd keys
 killall sxhkd
@@ -19,7 +22,7 @@ nitrogen --restore # Wallpaper
 
 # Bar
 killall polybar
-polybar bar1 &
+polybar top1; polybar top2 &
 
 # Compositor
 killall picom
@@ -28,6 +31,7 @@ picom &
 # Notifications
 killall dunst
 dunst &
+
 # BSPWM CONFIGURATION
 bspc monitor -d 1 2 3 4 5 6 7 8 9
 

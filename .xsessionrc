@@ -1,0 +1,9 @@
+#
+# XSESSIONRC FILE
+# by unixkiwi
+#
+
+# Autostart
+/usr/bin/lxpolkit &
+pkill -9 pulseaudio; pulseaudio &
+setxkbmap de
