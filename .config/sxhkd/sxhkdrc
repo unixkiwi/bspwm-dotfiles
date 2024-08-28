@@ -2,7 +2,7 @@
 # SXHKD CONFIG
 # by unixkiwi
 #
-
+# App keys
 # terminal
 super + Return
 	alacritty
@@ -18,12 +18,22 @@ super + b
 # filemanager
 super + e
 	doublecmd
+# bspwm keys
+# volume up
+XF86AudioRaiseVolume
+	pactl set-sink-volume @DEFAULT_SINK@ +5%
+
+# volume down
+XF86AudioLowerVolume
+	pactl set-sink-volume @DEFAULT_SINK@ -5%
+
+# volume mute
+XF86AudioMute
+	pactl set-sink-mute @DEFAULT_SINK@ toggle
 
 # lock
 super + l
 	i3lock -c 000000
-
-# bspwm keys
 # power menu
 super + shift + q
 	sh $HOME/.scripts/power_menu
