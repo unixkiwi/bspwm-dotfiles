@@ -27,3 +27,7 @@ Hey there 👋, these are my BSPWM dotfiles for Debian 12 bookworm. I am using:
 - [ ] Setup music player deamon
 - [ ] Get needed packages for rice
 - [ ] Create install script
+
+## Notes/Ideas
+- maybe add pywal
+- todo list app, module for polybar, pop up menu with tasks
