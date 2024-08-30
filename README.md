@@ -21,7 +21,7 @@ Hey there 👋, these are my BSPWM dotfiles for Debian 12 bookworm. I am using:
 - [X] Configure Bspwm workspaces nicely
 - [ ] Theme Display Manager
 - [ ] Notification Center
-- [ ] Theme Power Menu
+- [X] Theme Power Menu
 - [ ] Clipboard history menu
 - [ ] Create aliases
 - [ ] Setup music player deamon
