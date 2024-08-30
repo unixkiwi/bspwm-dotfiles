@@ -18,7 +18,7 @@ Hey there 👋, these are my BSPWM dotfiles for Debian 12 bookworm. I am using:
 - [X] Working Display Manager
 - [X] Bspwm window colors
 - [X] Compositor (Picom)
-- [ ] Configure Bspwm workspaces nicely
+- [X] Configure Bspwm workspaces nicely
 - [ ] Theme Display Manager
 - [ ] Notification Center
 - [ ] Theme Power Menu

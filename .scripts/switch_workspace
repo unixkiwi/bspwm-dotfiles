@@ -1,0 +1,17 @@
+#!/bin/sh
+
+curr_monitor=$(bspc query -M -d --names)
+
+if [ $1 = "shift"  ]; then
+	mode="node -d"
+else
+	mode="desktop -f"
+fi
+
+if [ $curr_monitor = "eDP-1" ]; then
+	bspc $mode $2
+	bspc desktop -f $2
+else
+	bspc $mode $(($2+9))
+	bspc desktop -f $(($2+9))
+fi

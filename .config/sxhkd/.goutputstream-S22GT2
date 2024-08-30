@@ -18,6 +18,7 @@ super + b
 # filemanager
 super + e
 	doublecmd
+	
 
 # BSPWM keys
 # volume up
@@ -67,41 +68,11 @@ super + f
 super + {_,shift + }{Left,Down,Up,Right}
 	bspc node -{f,s} {west,south,north,east}
 
-# focus or send and focus to the given workspace
-super + {_,shift + } 1
-	~/.scripts/switch_workspace {desktop,shift} 1
+# focus or send to the given desktop
+super + {_,shift + }{1-9,0}
+	bspc {desktop -f,node -d} '^{1-9,10}'
 
-super + {_,shift + } 2
-	~/.scripts/switch_workspace {desktop,shift} 2
-
-super + {_,shift + } 3
-	~/.scripts/switch_workspace {desktop,shift} 3
-	
-super + {_,shift + } 4
-	~/.scripts/switch_workspace {desktop,shift} 4
-
-super + {_,shift + } 5
-	~/.scripts/switch_workspace {desktop,shift} 5
-
-super + {_,shift + } 6
-	~/.scripts/switch_workspace {desktop,shift} 6
-
-super + {_,shift + } 7
-	~/.scripts/switch_workspace {desktop,shift} 7
-
-super + {_,shift + } 8
-	~/.scripts/switch_workspace {desktop,shift} 8
-
-super + {_,shift + } 9
-	~/.scripts/switch_workspace {desktop,shift} 9
-	
-super + {_,shift + } 0
-	~/.scripts/switch_workspace {desktop,shift} 10
-	
 # preselect the direction
 super + ctrl + {h,j,k,l}
 	bspc node -p {west,south,north,east}
 
-# move a floating window
-super + {Left,Down,Up,Right}
-	bspc node -v {-20 0,0 20,0 -20,20 0}

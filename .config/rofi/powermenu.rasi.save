@@ -8,7 +8,6 @@
 
 * {
 	background-color: #2b2e35;
-	font: "Font Awesome 72";
 }
 
 window {
@@ -17,8 +16,7 @@ window {
 	anchor: center;
 	border: 4px;
 	border-color: #98c379;
-	height: 796px;
-	width: 200px;
+	
 }
 
 inputbar {
@@ -26,8 +24,13 @@ inputbar {
 }
 
 listview {
+	lines: 1;
+	columns: 5;
+	layout: vertical;
 	background-color: #2b2e35;
-	margin: 10px;
+	margin: 50px;
+	cylce: true;
+	fixed-columns: true;
 }
 
 element {
@@ -35,11 +38,12 @@ element {
 }
 
 element-text {
-	color: #aaaaaa;
-	horizontal-align: 0.5;
+	color: #ffffff;
 }
 
-element-text selected.normal {
-	color: #b8ff99;
+element selected.normal {
+	border: 2px;
+	border-color: #98c379;
+	border-radius: 50px;
 }
 
