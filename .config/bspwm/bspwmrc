@@ -25,6 +25,10 @@ bspc config gapless_monocle true
 bspc config single_monocle true
 
 # AUTOSTART
+# cursor
+xsetroot -cursor_name left_ptr
+
+# keyboard layout
 setxkbmap de
 
 # Bluetooth
