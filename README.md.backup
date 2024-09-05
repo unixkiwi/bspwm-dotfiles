@@ -22,7 +22,7 @@ Hey there 👋, these are my BSPWM dotfiles for Debian 12 bookworm. I am using:
 - [ ] Theme Display Manager
 - [ ] Notification Center
 - [X] Theme Power Menu
-- [X] GTK and QT Style
+- [ ] GTK and QT Style
 - [X] Clipboard history menu
 - [X] NetworkManager Tray and GUI
 - [X] Create aliases

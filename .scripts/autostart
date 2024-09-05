@@ -1,0 +1,15 @@
+#!/bin/sh
+
+# picom
+killall picom
+while pgrep -x picom > /dev/null; do
+    sleep 1
+done
+picom &
+
+# bar
+killall polybar
+while pgrep -x polybar > /dev/null; do
+    sleep 1
+done
+polybar top1; polybar top2 &

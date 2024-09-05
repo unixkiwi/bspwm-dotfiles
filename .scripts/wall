@@ -1,0 +1,5 @@
+#!/bin/bash
+
+wall=$(find $HOME/wallpapers/ -type f | shuf -n1)
+hsetroot -fill $wall
+wal -i $wall

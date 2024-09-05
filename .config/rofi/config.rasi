@@ -1,20 +1,16 @@
-@theme "./Pop-Dark.rasi"
-
+@import "~/.cache/wal/colors-rofi-dark"
 * {
-    selected-normal-foreground: #ffffff;
-    selected-normal-background: #709575;
-    background-color: #2b2e35;
     border-radius: 5px;
 }
 
 window {
     border: 2px;
-    border-color: #98c379;
 }
 
 configuration {
     display-drun: "Search";
     display-run: "Run";
+    show-icons: false;
 }
 
 element {

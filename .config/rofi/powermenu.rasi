@@ -6,40 +6,31 @@
  * Rofi Theme File
 **/
 
+@import "~/.cache/wal/colors-rofi-dark.rasi"
+
 * {
-	background-color: #2b2e35;
-	font: "Font Awesome 72";
+	font: "Font Awesome 25";
 }
 
 window {
-	border-radius: 20px;
-	location: center;
-	anchor: center;
 	border: 4px;
-	border-color: #98c379;
-	height: 796px;
-	width: 200px;
+	width: 400px;
+	location: center;
+	height: 340px;
 }
 
 inputbar {
 	enabled: false;
 }
 
-listview {
-	background-color: #2b2e35;
-	margin: 10px;
-}
-
-element {
-	padding: 10px;
+element selected.normal {
+	border: 2px;
 }
 
 element-text {
-	color: #aaaaaa;
-	horizontal-align: 0.5;
+	color: #777777;
 }
 
 element-text selected.normal {
-	color: #b8ff99;
+	color: #ffffff;
 }
-

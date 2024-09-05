@@ -19,6 +19,10 @@ super + b
 super + e
 	doublecmd
 
+# clipboard hist
+super + shift + v
+	copyq menu
+
 # BSPWM keys
 # volume up
 XF86AudioRaiseVolume
@@ -61,7 +65,7 @@ super + v
 
 # toggle window fullscreen
 super + f
-	bspc node -t ~fullscreen
+	bspc node -t "~"fullscreen
 
 # focus/send window in the given direction
 super + {_,shift + }{Left,Down,Up,Right}
