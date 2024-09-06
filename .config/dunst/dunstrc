@@ -25,28 +25,3 @@ always_run_script = true
 title = Dunst
 class = Dunst
 font = "Monospace 12"
-
-
-[shortcuts]
-close = ctrl+shift+space
-close_all = ctrl+shift+space
-history = ctrl+grave
-context = ctrl+shift+period
-
-[urgency_low]
-timeout = 4
-background = "#2b2e35"
-foreground = "#abb2bf"
-frame_color = "#606565"
-
-[urgency_normal]
-timeout = 8
-background = "#2b2e35"
-foreground = "#abb2bf"
-frame_color = "#98c379"
-
-[urgency_critical]
-timeout = 0
-background = "#2b2e35"
-foreground = "#ffffff" 
-frame_color = "#955065"

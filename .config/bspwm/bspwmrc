@@ -56,3 +56,7 @@ nm-applet &
 # Clipboard Manager
 killall copyq
 copyq &
+
+# Screenshots
+killall flameshot
+flameshot

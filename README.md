@@ -27,6 +27,7 @@ Hey there 👋, these are my BSPWM dotfiles for Debian 12 bookworm. I am using:
 - [X] NetworkManager Tray and GUI
 - [X] Create aliases
 - [ ] Setup music player deamon
+- [X] Screenshot tool
 - [X] Add pywal
 
 ## Install

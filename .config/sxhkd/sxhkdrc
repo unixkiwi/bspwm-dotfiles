@@ -23,6 +23,10 @@ super + e
 super + shift + v
 	copyq menu
 
+# screenshot
+Print
+	flameshot gui
+
 # BSPWM keys
 # volume up
 XF86AudioRaiseVolume
