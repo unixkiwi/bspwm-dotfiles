@@ -1,3 +1,5 @@
+# **SOME FEATURES ARE NOT WORKING**
+
 # bspwm dotfiles
 Hey there 👋, these are my BSPWM dotfiles for Debian 12 bookworm. I am using: 
 - **OS**: Debian Testing (Trixie)
